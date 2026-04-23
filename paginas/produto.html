@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes do Produto - Grão & Aroma">
+    <title>Detalhes do Produto - Grão & Aroma</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER E NAVEGAÇÃO
+         ============================================ -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <span>Grão & Aroma</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         SEÇÃO BREADCRUMB
+         ============================================ -->
+    <section style="background-color: var(--cor-fundo); padding: var(--espaco-lg);">
+        <div class="container">
+            <p style="color: var(--cor-texto-claro);">
+                <a href="../index.html">Início</a> / 
+                <a href="catalogo.html">Catálogo</a> / 
+                <span>Detalhes do Produto</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO DETALHES DO PRODUTO
+         ============================================ -->
+    <section class="secao-clara">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: start;">
+                <!-- Imagem do Produto -->
+                <div>
+                    <img src="../imagens/cafe-1.jpg" alt="Espresso Premium" 
+                         style="width: 100%; border-radius: var(--raio-medio); box-shadow: var(--sombra-media);">
+                </div>
+
+                <!-- Informações do Produto -->
+                <div>
+                    <h1 style="margin-bottom: var(--espaco-md);">Espresso Premium</h1>
+                    
+                    <div style="display: flex; align-items: center; gap: var(--espaco-lg); margin-bottom: var(--espaco-xl);">
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--cor-secundaria);">R$ 8,90</div>
+                        <div style="display: flex; gap: var(--espaco-xs);">
+                            <span style="color: var(--cor-secundaria); font-size: 1.2rem;">★★★★★</span>
+                            <span style="color: var(--cor-texto-claro);">(127 avaliações)</span>
+                        </div>
+                    </div>
+
+                    <div class="destaque">
+                        <p style="margin: 0; font-weight: 600;">Disponível em Estoque</p>
+                    </div>
+
+                    <h3 style="margin-top: var(--espaco-xl); margin-bottom: var(--espaco-md);">Descrição</h3>
+                    <p>
+                        Nosso Espresso Premium é uma seleção exclusiva de grãos 100% arábica, 
+                        cuidadosamente escolhidos de produtores artesanais do Brasil. Cada xícara 
+                        oferece um sabor intenso, aromático e encorpado que caracteriza um verdadeiro 
+                        espresso gourmet.
+                    </p>
+
+                    <h3 style="margin-bottom: var(--espaco-md);">Características</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: var(--espaco-sm) 0; border-bottom: 1px solid var(--cor-borda);">
+                            <strong>Origem:</strong> Brasil - Região de Minas Gerais
+                        </li>
+                        <li style="padding: var(--espaco-sm) 0; border-bottom: 1px solid var(--cor-borda);">
+                            <strong>Tipo:</strong> 100% Arábica
+                        </li>
+                        <li style="padding: var(--espaco-sm) 0; border-bottom: 1px solid var(--cor-borda);">
+                            <strong>Torrefação:</strong> Média (Medium Roast)
+                        </li>
+                        <li style="padding: var(--espaco-sm) 0; border-bottom: 1px solid var(--cor-borda);">
+                            <strong>Moagem:</strong> Sob Encomenda
+                        </li>
+                        <li style="padding: var(--espaco-sm) 0; border-bottom: 1px solid var(--cor-borda);">
+                            <strong>Embalagem:</strong> 250g - Grãos ou Moído
+                        </li>
+                        <li style="padding: var(--espaco-sm) 0;">
+                            <strong>Validade:</strong> 12 meses após a torrefação
+                        </li>
+                    </ul>
+
+                    <h3 style="margin-top: var(--espaco-xl); margin-bottom: var(--espaco-md);">Notas de Sabor</h3>
+                    <div class="flex" style="gap: var(--espaco-md); margin-bottom: var(--espaco-xl);">
+                        <div style="background-color: var(--cor-fundo); padding: var(--espaco-md); border-radius: var(--raio-pequeno); flex: 1; text-align: center;">
+                            <strong>Chocolate</strong>
+                        </div>
+                        <div style="background-color: var(--cor-fundo); padding: var(--espaco-md); border-radius: var(--raio-pequeno); flex: 1; text-align: center;">
+                            <strong>Nozes</strong>
+                        </div>
+                        <div style="background-color: var(--cor-fundo); padding: var(--espaco-md); border-radius: var(--raio-pequeno); flex: 1; text-align: center;">
+                            <strong>Caramelo</strong>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Ação -->
+                    <div class="flex" style="gap: var(--espaco-md); margin-bottom: var(--espaco-xl);">
+                        <button class="btn btn-primario btn-grande" style="flex: 1; cursor: pointer;" 
+                                onclick="alert('Produto adicionado ao carrinho!')">
+                            🛒 Adicionar ao Carrinho
+                        </button>
+                        <button class="btn btn-outline" style="flex: 1; cursor: pointer; background-color: var(--cor-primaria); color: var(--cor-branco); border: none;" 
+                                onclick="alert('Produto adicionado aos favoritos!')">
+                            ❤️ Favoritar
+                        </button>
+                    </div>
+
+                    <!-- Voltar -->
+                    <a href="catalogo.html" class="btn btn-secundario" style="display: inline-block;">
+                        ← Voltar ao Catálogo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO PRODUTOS RELACIONADOS
+         ============================================ -->
+    <section class="secao-primaria">
+        <div class="container">
+            <h2 class="texto-centro" style="margin-bottom: var(--espaco-2xl);">Produtos Relacionados</h2>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="../imagens/cafe-2.jpg" alt="Cappuccino Artesanal" class="card-imagem">
+                    <div class="card-corpo">
+                        <h4 class="card-titulo">Cappuccino Artesanal</h4>
+                        <p class="card-descricao">Espresso com leite vaporizado e canela.</p>
+                        <div class="card-preco">R$ 12,50</div>
+                        <div class="card-rodape">
+                            <a href="produto.html?id=2" class="btn btn-primario btn-pequeno card-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../imagens/cafe-3.jpg" alt="Café com Leite Gourmet" class="card-imagem">
+                    <div class="card-corpo">
+                        <h4 class="card-titulo">Café com Leite Gourmet</h4>
+                        <p class="card-descricao">Blend exclusivo com leite integral.</p>
+                        <div class="card-preco">R$ 10,00</div>
+                        <div class="card-rodape">
+                            <a href="produto.html?id=3" class="btn btn-primario btn-pequeno card-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../imagens/cafe-4.png" alt="Macchiato Elegante" class="card-imagem">
+                    <div class="card-corpo">
+                        <h4 class="card-titulo">Macchiato Elegante</h4>
+                        <p class="card-descricao">Espresso com espuma de leite.</p>
+                        <div class="card-preco">R$ 11,00</div>
+                        <div class="card-rodape">
+                            <a href="produto.html?id=4" class="btn btn-primario btn-pequeno card-link">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-secao">
+                <h4>Sobre Nós</h4>
+                <p>Grão & Aroma é uma cafeteria gourmet dedicada a oferecer os melhores cafés premium do Brasil.</p>
+            </div>
+            
+            <div class="footer-secao">
+                <h4>Links Rápidos</h4>
+                <ul style="list-style: none;">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-secao">
+                <h4>Contato</h4>
+                <p>Email: contato_de_exemplo@gmail.com</p>
+                <p>Telefone: (11) 9999-9999</p>
+                <p>Endereço: São Paulo, SP</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Grão & Aroma - Cafeteria Gourmet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

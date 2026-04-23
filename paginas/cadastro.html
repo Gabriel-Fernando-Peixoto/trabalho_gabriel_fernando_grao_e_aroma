@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastro - Grão & Aroma">
+    <title>Cadastro - Grão & Aroma</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER E NAVEGAÇÃO
+         ============================================ -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <span>Grão & Aroma</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="cadastro.html" class="nav-ativo">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         SEÇÃO DO CADASTRO
+         ============================================ -->
+    <section class="hero" style="min-height: 250px;">
+        <h1>Cadastro</h1>
+        <p>Crie sua conta e aproveite ofertas exclusivas</p>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO FORMULÁRIO DE CADASTRO
+         ============================================ -->
+    <section class="secao-clara">
+        <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="formulario">
+                    <h2 class="texto-centro" style="margin-bottom: var(--espaco-xl);">Criar Conta</h2>
+                    
+                    <form id="formCadastro" onsubmit="handleSubmit(event)">
+                        <!-- Campo Nome -->
+                        <div class="form-grupo">
+                            <label for="nome">Nome Completo *</label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                placeholder="Digite seu nome completo"
+                                required
+                                minlength="3"
+                            >
+                        </div>
+
+                        <!-- Campo Email -->
+                        <div class="form-grupo">
+                            <label for="email">Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="seu.email@exemplo.com"
+                                required
+                            >
+                        </div>
+
+                        <!-- Campo Senha -->
+                        <div class="form-grupo">
+                            <label for="senha">Senha *</label>
+                            <input 
+                                type="password" 
+                                id="senha" 
+                                name="senha" 
+                                placeholder="Digite uma senha segura"
+                                required
+                                minlength="6"
+                            >
+                            <small style="color: var(--cor-texto-claro); display: block; margin-top: var(--espaco-xs);">
+                                Mínimo 6 caracteres
+                            </small>
+                        </div>
+
+                        <!-- Campo Confirmar Senha -->
+                        <div class="form-grupo">
+                            <label for="confirmar-senha">Confirmar Senha *</label>
+                            <input 
+                                type="password" 
+                                id="confirmar-senha" 
+                                name="confirmar-senha" 
+                                placeholder="Confirme sua senha"
+                                required
+                                minlength="6"
+                            >
+                        </div>
+
+                        <!-- Campo Telefone (Opcional) -->
+                        <div class="form-grupo">
+                            <label for="telefone">Telefone (Opcional)</label>
+                            <input 
+                                type="tel" 
+                                id="telefone" 
+                                name="telefone" 
+                                placeholder="(11) 9999-9999"
+                            >
+                        </div>
+
+                        <!-- Campo Endereço (Opcional) -->
+                        <div class="form-grupo">
+                            <label for="endereco">Endereço (Opcional)</label>
+                            <input 
+                                type="text" 
+                                id="endereco" 
+                                name="endereco" 
+                                placeholder="Rua, número, complemento"
+                            >
+                        </div>
+
+                        <!-- Checkbox Termos -->
+                        <div class="form-grupo" style="display: flex; align-items: flex-start; gap: var(--espaco-md);">
+                            <input 
+                                type="checkbox" 
+                                id="termos" 
+                                name="termos" 
+                                required
+                                style="margin-top: 6px; cursor: pointer;"
+                            >
+                            <label for="termos" style="margin: 0; cursor: pointer;">
+                                Concordo com os <a href="#" style="color: var(--cor-primaria);">Termos de Serviço</a> 
+                                e a <a href="#" style="color: var(--cor-primaria);">Política de Privacidade</a> *
+                            </label>
+                        </div>
+
+                        <!-- Checkbox Newsletter -->
+                        <div class="form-grupo" style="display: flex; align-items: flex-start; gap: var(--espaco-md);">
+                            <input 
+                                type="checkbox" 
+                                id="newsletter" 
+                                name="newsletter"
+                                style="margin-top: 6px; cursor: pointer;"
+                            >
+                            <label for="newsletter" style="margin: 0; cursor: pointer;">
+                                Desejo receber ofertas e promoções por email
+                            </label>
+                        </div>
+
+                        <!-- Botão Enviar -->
+                        <a href="../index.html" class="btn btn-primario btn-grande" style="width: 100%; margin-top: var(--espaco-xl); display: inline-block; text-align: center;">
+                            Criar Conta
+                        </a>
+
+                        <!-- Link Login -->
+                        <p class="texto-centro" style="margin-top: var(--espaco-lg); color: var(--cor-texto-claro);">
+                            Já tem uma conta? <a href="#" style="color: var(--cor-primaria); font-weight: 600;">Faça Login</a>
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Benefícios do Cadastro -->
+                <div style="margin-top: var(--espaco-2xl);">
+                    <h3 class="texto-centro" style="margin-bottom: var(--espaco-xl);">Benefícios de se Cadastrar</h3>
+                    <div class="grid grid-3">
+                        <div class="card">
+                            <div style="padding: var(--espaco-xl); text-align: center; background-color: var(--cor-fundo);">
+                                <div style="font-size: 2.5rem; margin-bottom: var(--espaco-md);">🎁</div>
+                                <h4 style="margin-bottom: var(--espaco-sm);">Desconto Especial</h4>
+                                <p style="margin: 0; color: var(--cor-texto-claro);">10% de desconto no primeiro pedido</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div style="padding: var(--espaco-xl); text-align: center; background-color: var(--cor-fundo);">
+                                <div style="font-size: 2.5rem; margin-bottom: var(--espaco-md);">⭐</div>
+                                <h4 style="margin-bottom: var(--espaco-sm);">Programa de Pontos</h4>
+                                <p style="margin: 0; color: var(--cor-texto-claro);">Acumule pontos em cada compra</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div style="padding: var(--espaco-xl); text-align: center; background-color: var(--cor-fundo);">
+                                <div style="font-size: 2.5rem; margin-bottom: var(--espaco-md);">📧</div>
+                                <h4 style="margin-bottom: var(--espaco-sm);">Ofertas Exclusivas</h4>
+                                <p style="margin: 0; color: var(--cor-texto-claro);">Receba promoções por email</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-secao">
+                <h4>Sobre Nós</h4>
+                <p>Grão & Aroma é uma cafeteria gourmet dedicada a oferecer os melhores cafés premium do Brasil.</p>
+            </div>
+            
+            <div class="footer-secao">
+                <h4>Links Rápidos</h4>
+                <ul style="list-style: none;">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-secao">
+                <h4>Contato</h4>
+                <p>Email: contato_de_exemplo@gmail.com</p>
+                <p>Telefone: (11) 9999-9999</p>
+                <p>Endereço: São Paulo, SP</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Grão & Aroma - Cafeteria Gourmet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
